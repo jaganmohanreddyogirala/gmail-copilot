@@ -1,0 +1,636 @@
+{
+  "dev_metrics": {
+    "id": "eval_dev_e7657211",
+    "intent_accuracy": 100.0,
+    "risk_accuracy": 100.0,
+    "priority_accuracy": 100.0,
+    "validation_accuracy": 100.0,
+    "approval_precision": 100.0,
+    "false_positive_rate": 0.0,
+    "high_risk_precision": 100.0,
+    "high_risk_recall": 100.0,
+    "high_risk_f1": 100.0,
+    "high_risk_false_negatives": 0,
+    "avg_latency_ms": 1.7,
+    "total_samples": 100,
+    "metrics_json": {
+      "eval_type": "Dev",
+      "confusion_matrices": {
+        "intent": {
+          "Technical Query": {
+            "Technical Query": 15,
+            "Action Required / Task Request": 0,
+            "Informational / FYI": 0,
+            "Decision Needed": 0,
+            "Security Alert / Credential Exposure Risk": 0,
+            "Promotional / Marketing": 0
+          },
+          "Action Required / Task Request": {
+            "Technical Query": 0,
+            "Action Required / Task Request": 35,
+            "Informational / FYI": 0,
+            "Decision Needed": 0,
+            "Security Alert / Credential Exposure Risk": 0,
+            "Promotional / Marketing": 0
+          },
+          "Informational / FYI": {
+            "Technical Query": 0,
+            "Action Required / Task Request": 0,
+            "Informational / FYI": 10,
+            "Decision Needed": 0,
+            "Security Alert / Credential Exposure Risk": 0,
+            "Promotional / Marketing": 0
+          },
+          "Decision Needed": {
+            "Technical Query": 0,
+            "Action Required / Task Request": 0,
+            "Informational / FYI": 0,
+            "Decision Needed": 15,
+            "Security Alert / Credential Exposure Risk": 0,
+            "Promotional / Marketing": 0
+          },
+          "Security Alert / Credential Exposure Risk": {
+            "Technical Query": 0,
+            "Action Required / Task Request": 0,
+            "Informational / FYI": 0,
+            "Decision Needed": 0,
+            "Security Alert / Credential Exposure Risk": 10,
+            "Promotional / Marketing": 0
+          },
+          "Promotional / Marketing": {
+            "Technical Query": 0,
+            "Action Required / Task Request": 0,
+            "Informational / FYI": 0,
+            "Decision Needed": 0,
+            "Security Alert / Credential Exposure Risk": 0,
+            "Promotional / Marketing": 15
+          }
+        },
+        "risk": {
+          "Low": {
+            "Low": 90,
+            "Medium": 0,
+            "High - Requires Human Review": 0
+          },
+          "Medium": {
+            "Low": 0,
+            "Medium": 0,
+            "High - Requires Human Review": 0
+          },
+          "High - Requires Human Review": {
+            "Low": 0,
+            "Medium": 0,
+            "High - Requires Human Review": 10
+          }
+        },
+        "priority": {
+          "P0 - Critical": {
+            "P0 - Critical": 10,
+            "P1 - High": 0,
+            "P2 - Medium": 0,
+            "P3 - Low": 0
+          },
+          "P1 - High": {
+            "P0 - Critical": 0,
+            "P1 - High": 45,
+            "P2 - Medium": 0,
+            "P3 - Low": 0
+          },
+          "P2 - Medium": {
+            "P0 - Critical": 0,
+            "P1 - High": 0,
+            "P2 - Medium": 20,
+            "P3 - Low": 0
+          },
+          "P3 - Low": {
+            "P0 - Critical": 0,
+            "P1 - High": 0,
+            "P2 - Medium": 0,
+            "P3 - Low": 25
+          }
+        }
+      },
+      "per_class_metrics": {
+        "intent": {
+          "Technical Query": {
+            "precision": 100.0,
+            "recall": 100.0,
+            "f1": 100.0,
+            "support": 15,
+            "true_positives": 15,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "Action Required / Task Request": {
+            "precision": 100.0,
+            "recall": 100.0,
+            "f1": 100.0,
+            "support": 35,
+            "true_positives": 35,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "Informational / FYI": {
+            "precision": 100.0,
+            "recall": 100.0,
+            "f1": 100.0,
+            "support": 10,
+            "true_positives": 10,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "Decision Needed": {
+            "precision": 100.0,
+            "recall": 100.0,
+            "f1": 100.0,
+            "support": 15,
+            "true_positives": 15,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "Security Alert / Credential Exposure Risk": {
+            "precision": 100.0,
+            "recall": 100.0,
+            "f1": 100.0,
+            "support": 10,
+            "true_positives": 10,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "Promotional / Marketing": {
+            "precision": 100.0,
+            "recall": 100.0,
+            "f1": 100.0,
+            "support": 15,
+            "true_positives": 15,
+            "false_positives": 0,
+            "false_negatives": 0
+          }
+        },
+        "risk": {
+          "Low": {
+            "precision": 100.0,
+            "recall": 100.0,
+            "f1": 100.0,
+            "support": 90,
+            "true_positives": 90,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "Medium": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0,
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "High - Requires Human Review": {
+            "precision": 100.0,
+            "recall": 100.0,
+            "f1": 100.0,
+            "support": 10,
+            "true_positives": 10,
+            "false_positives": 0,
+            "false_negatives": 0
+          }
+        },
+        "priority": {
+          "P0 - Critical": {
+            "precision": 100.0,
+            "recall": 100.0,
+            "f1": 100.0,
+            "support": 10,
+            "true_positives": 10,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "P1 - High": {
+            "precision": 100.0,
+            "recall": 100.0,
+            "f1": 100.0,
+            "support": 45,
+            "true_positives": 45,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "P2 - Medium": {
+            "precision": 100.0,
+            "recall": 100.0,
+            "f1": 100.0,
+            "support": 20,
+            "true_positives": 20,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "P3 - Low": {
+            "precision": 100.0,
+            "recall": 100.0,
+            "f1": 100.0,
+            "support": 25,
+            "true_positives": 25,
+            "false_positives": 0,
+            "false_negatives": 0
+          }
+        }
+      },
+      "node_latency_stats": {
+        "thread_builder": {
+          "avg": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "p99": 0.0
+        },
+        "mcp_context": {
+          "avg": 0.0,
+          "p50": 0.0,
+          "p95": 0.1,
+          "p99": 0.1
+        },
+        "classify": {
+          "avg": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "p99": 0.0
+        },
+        "style_memory": {
+          "avg": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "p99": 0.0
+        },
+        "generate_reply": {
+          "avg": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "p99": 0.0
+        },
+        "validate_reply": {
+          "avg": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "p99": 0.0
+        }
+      },
+      "top_3_latency_nodes": [
+        "thread_builder",
+        "mcp_context",
+        "classify"
+      ],
+      "top_confusion_pairs": {
+        "intent": [],
+        "risk": [],
+        "priority": []
+      },
+      "total_misclassifications": 0,
+      "high_risk_false_negatives_count": 0
+    },
+    "created_at": null
+  },
+  "holdout_metrics": {
+    "id": "eval_holdout_a0a62121",
+    "intent_accuracy": 54.0,
+    "risk_accuracy": 100.0,
+    "priority_accuracy": 68.0,
+    "validation_accuracy": 100.0,
+    "approval_precision": 100.0,
+    "false_positive_rate": 0.0,
+    "high_risk_precision": 100.0,
+    "high_risk_recall": 100.0,
+    "high_risk_f1": 100.0,
+    "high_risk_false_negatives": 0,
+    "avg_latency_ms": 1.8,
+    "total_samples": 50,
+    "metrics_json": {
+      "eval_type": "Holdout",
+      "confusion_matrices": {
+        "intent": {
+          "Technical Query": {
+            "Technical Query": 0,
+            "Action Required / Task Request": 7,
+            "Informational / FYI": 0,
+            "Decision Needed": 0,
+            "Security Alert / Credential Exposure Risk": 0,
+            "Promotional / Marketing": 0
+          },
+          "Action Required / Task Request": {
+            "Technical Query": 0,
+            "Action Required / Task Request": 8,
+            "Informational / FYI": 0,
+            "Decision Needed": 1,
+            "Security Alert / Credential Exposure Risk": 1,
+            "Promotional / Marketing": 0
+          },
+          "Informational / FYI": {
+            "Technical Query": 0,
+            "Action Required / Task Request": 5,
+            "Informational / FYI": 4,
+            "Decision Needed": 0,
+            "Security Alert / Credential Exposure Risk": 0,
+            "Promotional / Marketing": 0
+          },
+          "Decision Needed": {
+            "Technical Query": 0,
+            "Action Required / Task Request": 4,
+            "Informational / FYI": 0,
+            "Decision Needed": 3,
+            "Security Alert / Credential Exposure Risk": 0,
+            "Promotional / Marketing": 0
+          },
+          "Security Alert / Credential Exposure Risk": {
+            "Technical Query": 0,
+            "Action Required / Task Request": 0,
+            "Informational / FYI": 0,
+            "Decision Needed": 0,
+            "Security Alert / Credential Exposure Risk": 8,
+            "Promotional / Marketing": 0
+          },
+          "Promotional / Marketing": {
+            "Technical Query": 0,
+            "Action Required / Task Request": 5,
+            "Informational / FYI": 0,
+            "Decision Needed": 0,
+            "Security Alert / Credential Exposure Risk": 0,
+            "Promotional / Marketing": 4
+          }
+        },
+        "risk": {
+          "Low": {
+            "Low": 41,
+            "Medium": 0,
+            "High - Requires Human Review": 0
+          },
+          "Medium": {
+            "Low": 0,
+            "Medium": 0,
+            "High - Requires Human Review": 0
+          },
+          "High - Requires Human Review": {
+            "Low": 0,
+            "Medium": 0,
+            "High - Requires Human Review": 9
+          }
+        },
+        "priority": {
+          "P0 - Critical": {
+            "P0 - Critical": 9,
+            "P1 - High": 0,
+            "P2 - Medium": 0,
+            "P3 - Low": 0
+          },
+          "P1 - High": {
+            "P0 - Critical": 0,
+            "P1 - High": 8,
+            "P2 - Medium": 6,
+            "P3 - Low": 0
+          },
+          "P2 - Medium": {
+            "P0 - Critical": 0,
+            "P1 - High": 0,
+            "P2 - Medium": 9,
+            "P3 - Low": 0
+          },
+          "P3 - Low": {
+            "P0 - Critical": 0,
+            "P1 - High": 1,
+            "P2 - Medium": 9,
+            "P3 - Low": 8
+          }
+        }
+      },
+      "per_class_metrics": {
+        "intent": {
+          "Technical Query": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 7,
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 7
+          },
+          "Action Required / Task Request": {
+            "precision": 27.59,
+            "recall": 80.0,
+            "f1": 41.03,
+            "support": 10,
+            "true_positives": 8,
+            "false_positives": 21,
+            "false_negatives": 2
+          },
+          "Informational / FYI": {
+            "precision": 100.0,
+            "recall": 44.44,
+            "f1": 61.54,
+            "support": 9,
+            "true_positives": 4,
+            "false_positives": 0,
+            "false_negatives": 5
+          },
+          "Decision Needed": {
+            "precision": 75.0,
+            "recall": 42.86,
+            "f1": 54.55,
+            "support": 7,
+            "true_positives": 3,
+            "false_positives": 1,
+            "false_negatives": 4
+          },
+          "Security Alert / Credential Exposure Risk": {
+            "precision": 88.89,
+            "recall": 100.0,
+            "f1": 94.12,
+            "support": 8,
+            "true_positives": 8,
+            "false_positives": 1,
+            "false_negatives": 0
+          },
+          "Promotional / Marketing": {
+            "precision": 100.0,
+            "recall": 44.44,
+            "f1": 61.54,
+            "support": 9,
+            "true_positives": 4,
+            "false_positives": 0,
+            "false_negatives": 5
+          }
+        },
+        "risk": {
+          "Low": {
+            "precision": 100.0,
+            "recall": 100.0,
+            "f1": 100.0,
+            "support": 41,
+            "true_positives": 41,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "Medium": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0,
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "High - Requires Human Review": {
+            "precision": 100.0,
+            "recall": 100.0,
+            "f1": 100.0,
+            "support": 9,
+            "true_positives": 9,
+            "false_positives": 0,
+            "false_negatives": 0
+          }
+        },
+        "priority": {
+          "P0 - Critical": {
+            "precision": 100.0,
+            "recall": 100.0,
+            "f1": 100.0,
+            "support": 9,
+            "true_positives": 9,
+            "false_positives": 0,
+            "false_negatives": 0
+          },
+          "P1 - High": {
+            "precision": 88.89,
+            "recall": 57.14,
+            "f1": 69.57,
+            "support": 14,
+            "true_positives": 8,
+            "false_positives": 1,
+            "false_negatives": 6
+          },
+          "P2 - Medium": {
+            "precision": 37.5,
+            "recall": 100.0,
+            "f1": 54.55,
+            "support": 9,
+            "true_positives": 9,
+            "false_positives": 15,
+            "false_negatives": 0
+          },
+          "P3 - Low": {
+            "precision": 100.0,
+            "recall": 44.44,
+            "f1": 61.54,
+            "support": 18,
+            "true_positives": 8,
+            "false_positives": 0,
+            "false_negatives": 10
+          }
+        }
+      },
+      "node_latency_stats": {
+        "thread_builder": {
+          "avg": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "p99": 0.0
+        },
+        "mcp_context": {
+          "avg": 0.0,
+          "p50": 0.0,
+          "p95": 0.1,
+          "p99": 0.1
+        },
+        "classify": {
+          "avg": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "p99": 0.0
+        },
+        "style_memory": {
+          "avg": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "p99": 0.0
+        },
+        "generate_reply": {
+          "avg": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "p99": 0.0
+        },
+        "validate_reply": {
+          "avg": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "p99": 0.0
+        }
+      },
+      "top_3_latency_nodes": [
+        "thread_builder",
+        "mcp_context",
+        "classify"
+      ],
+      "top_confusion_pairs": {
+        "intent": [
+          {
+            "expected": "Technical Query",
+            "predicted": "Action Required / Task Request",
+            "count": 7,
+            "pair_label": "Technical Query -> Action Required / Task Request"
+          },
+          {
+            "expected": "Informational / FYI",
+            "predicted": "Action Required / Task Request",
+            "count": 5,
+            "pair_label": "Informational / FYI -> Action Required / Task Request"
+          },
+          {
+            "expected": "Promotional / Marketing",
+            "predicted": "Action Required / Task Request",
+            "count": 5,
+            "pair_label": "Promotional / Marketing -> Action Required / Task Request"
+          },
+          {
+            "expected": "Decision Needed",
+            "predicted": "Action Required / Task Request",
+            "count": 4,
+            "pair_label": "Decision Needed -> Action Required / Task Request"
+          },
+          {
+            "expected": "Action Required / Task Request",
+            "predicted": "Decision Needed",
+            "count": 1,
+            "pair_label": "Action Required / Task Request -> Decision Needed"
+          }
+        ],
+        "risk": [],
+        "priority": [
+          {
+            "expected": "P3 - Low",
+            "predicted": "P2 - Medium",
+            "count": 9,
+            "pair_label": "P3 - Low -> P2 - Medium"
+          },
+          {
+            "expected": "P1 - High",
+            "predicted": "P2 - Medium",
+            "count": 6,
+            "pair_label": "P1 - High -> P2 - Medium"
+          },
+          {
+            "expected": "P3 - Low",
+            "predicted": "P1 - High",
+            "count": 1,
+            "pair_label": "P3 - Low -> P1 - High"
+          }
+        ]
+      },
+      "total_misclassifications": 27,
+      "high_risk_false_negatives_count": 0
+    },
+    "created_at": null
+  },
+  "generalization_gap": {
+    "intent": 46.0,
+    "risk": 0.0,
+    "priority": 32.0
+  },
+  "sha256_verified": true
+}

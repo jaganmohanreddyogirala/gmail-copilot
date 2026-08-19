@@ -1,0 +1,7 @@
+{
+  "dataset_filename": "holdout_dataset.json",
+  "expected_sample_count": 50,
+  "sha256_hash": "9bdac11b7f8a3ac3b1f7420dfe8cb0a56a31a1e4303dd57e558c4c703c8273f7",
+  "created_at": "2026-08-19T05:00:00Z",
+  "description": "Cryptographic manifest for unseen holdout evaluation dataset ensuring immutability."
+}

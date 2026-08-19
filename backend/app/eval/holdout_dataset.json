@@ -1,0 +1,502 @@
+[
+  {
+    "id": "holdout_ambig_001",
+    "sender": "lead@company.com",
+    "subject": "Great job breaking the build yesterday...",
+    "body": "Oh wonderful, another deployment rollback. Really appreciate the midnight paging. Let us know when the fix is actually ready to merge.",
+    "expected_intent": "Action Required / Task Request",
+    "expected_risk": "Low",
+    "expected_priority": "P1 - High",
+    "expected_requires_approval": false
+  },
+  {
+    "id": "holdout_ambig_002",
+    "sender": "pm@company.com",
+    "subject": "Quick thought on Q3 roadmap",
+    "body": "Not sure if we should do Option A or Option B for the billing refactor. Might be good to talk sometime next week.",
+    "expected_intent": "Decision Needed",
+    "expected_risk": "Low",
+    "expected_priority": "P2 - Medium",
+    "expected_requires_approval": false
+  },
+  {
+    "id": "holdout_ambig_003",
+    "sender": "dev@company.com",
+    "subject": "Is the staging environment supposed to throw 502s?",
+    "body": "Hey, seeing intermittent 502 Bad Gateway on staging endpoint /api/v2/users. Is someone deploying?",
+    "expected_intent": "Technical Query",
+    "expected_risk": "Low",
+    "expected_priority": "P2 - Medium",
+    "expected_requires_approval": false
+  },
+  {
+    "id": "holdout_ambig_004",
+    "sender": "infra@company.com",
+    "subject": "Notice regarding memory usage on pod auth-service-x89",
+    "body": "Pod auth-service-x89 reached 85% memory threshold at 04:00 UTC. Auto-scaling triggered successfully. No user impact.",
+    "expected_intent": "Informational / FYI",
+    "expected_risk": "Low",
+    "expected_priority": "P3 - Low",
+    "expected_requires_approval": false
+  },
+  {
+    "id": "holdout_ambig_005",
+    "sender": "cto@company.com",
+    "subject": "Urgent: Need architectural recommendation for search cluster",
+    "body": "We need to choose between Elasticsearch 8.x and OpenSearch 2.x by tomorrow morning. Please evaluate cost, licensing, and query performance.",
+    "expected_intent": "Decision Needed",
+    "expected_risk": "Low",
+    "expected_priority": "P1 - High",
+    "expected_requires_approval": false
+  },
+  {
+    "id": "holdout_ambig_006",
+    "sender": "qa@company.com",
+    "subject": "Regression in PR #402 checkout flow",
+    "body": "Testing PR #402. Payment button fails on Safari mobile. Steps to reproduce attached.",
+    "expected_intent": "Action Required / Task Request",
+    "expected_risk": "Low",
+    "expected_priority": "P1 - High",
+    "expected_requires_approval": false
+  },
+  {
+    "id": "holdout_ambig_007",
+    "sender": "hr@company.com",
+    "subject": "Annual Feedback Survey Reminder",
+    "body": "Please complete your peer feedback survey by Friday 5 PM.",
+    "expected_intent": "Informational / FYI",
+    "expected_risk": "Low",
+    "expected_priority": "P3 - Low",
+    "expected_requires_approval": false
+  },
+  {
+    "id": "holdout_ambig_008",
+    "sender": "vendor@cloud.com",
+    "subject": "Save 50% on your cloud computing credits!",
+    "body": "Upgrade your tier today and get 50% discount on all GPU instances. Unsubscribe anytime.",
+    "expected_intent": "Promotional / Marketing",
+    "expected_risk": "Low",
+    "expected_priority": "P3 - Low",
+    "expected_requires_approval": false
+  },
+  {
+    "id": "holdout_ambig_009",
+    "sender": "security-bot@company.com",
+    "subject": "CRITICAL: Potential AWS Secret Access Key Exposure in public repo",
+    "body": "GitGuardian detected exposed secret key AKIAIOSFODNN7EXAMPLE in commit c8f90a. Please revoke credential immediately.",
+    "expected_intent": "Security Alert / Credential Exposure Risk",
+    "expected_risk": "High - Requires Human Review",
+    "expected_priority": "P0 - Critical",
+    "expected_requires_approval": true
+  },
+  {
+    "id": "holdout_ambig_010",
+    "sender": "devops@company.com",
+    "subject": "ALERT: Production Database Primary Node Disconnected",
+    "body": "PostgreSQL primary node pg-prod-01 is unreachable. Failover script active. Outage in progress.",
+    "expected_intent": "Action Required / Task Request",
+    "expected_risk": "High - Requires Human Review",
+    "expected_priority": "P0 - Critical",
+    "expected_requires_approval": true
+  },
+  {
+    "id": "holdout_thread_011",
+    "sender": "architect@company.com",
+    "subject": "Re: Re: Re: API Versioning Strategy Options",
+    "body": "Following up on the long discussion thread: Do NOT use URL path versioning. We decided on header-based versioning. Please update the OpenAPI specs.",
+    "expected_intent": "Action Required / Task Request",
+    "expected_risk": "Low",
+    "expected_priority": "P1 - High",
+    "expected_requires_approval": false
+  },
+  {
+    "id": "holdout_thread_012",
+    "sender": "client@enterprise.com",
+    "subject": "URGENT: Feature request or bug?",
+    "body": "We noticed that export to CSV limits rows to 10,000. Is this by design or a bug? We need 100k rows for our audit.",
+    "expected_intent": "Technical Query",
+    "expected_risk": "Low",
+    "expected_priority": "P2 - Medium",
+    "expected_requires_approval": false
+  },
+  {
+    "id": "holdout_thread_013",
+    "sender": "support@company.com",
+    "subject": "Customer Ticket #9920: Webhook delivery failures",
+    "body": "Customer reports 504 gateway timeouts receiving webhooks from our queue worker. Logs attached.",
+    "expected_intent": "Action Required / Task Request",
+    "expected_risk": "Low",
+    "expected_priority": "P1 - High",
+    "expected_requires_approval": false
+  },
+  {
+    "id": "holdout_thread_014",
+    "sender": "analytics@company.com",
+    "subject": "Monthly API Usage Summary - July 2026",
+    "body": "Total API requests served: 42,000,000. Average response latency: 45ms. Error rate: 0.02%. No action required.",
+    "expected_intent": "Informational / FYI",
+    "expected_risk": "Low",
+    "expected_priority": "P3 - Low",
+    "expected_requires_approval": false
+  },
+  {
+    "id": "holdout_thread_015",
+    "sender": "security@company.com",
+    "subject": "Action Required: Rotate Production DB Password immediately",
+    "body": "Per annual compliance audit, DB password for prod_user must be rotated today. Private key vault path: /secrets/db_password.",
+    "expected_intent": "Security Alert / Credential Exposure Risk",
+    "expected_risk": "High - Requires Human Review",
+    "expected_priority": "P0 - Critical",
+    "expected_requires_approval": true
+  },
+  {
+    "id": "holdout_code_016",
+    "sender": "backend-dev@company.com",
+    "subject": "NullPointerException in UserService.java line 142",
+    "body": "Error stacktrace:\njava.lang.NullPointerException at com.app.service.UserService.getUserById(UserService.java:142)\nCan someone check why user.getTenant() returns null during registration?",
+    "expected_intent": "Technical Query",
+    "expected_risk": "Low",
+    "expected_priority": "P2 - Medium",
+    "expected_requires_approval": false
+  },
+  {
+    "id": "holdout_code_017",
+    "sender": "devops@company.com",
+    "subject": "Kubernetes manifest review request for release v2.4",
+    "body": "Please review deployment.yaml diff:\n+ replicas: 10\n+ resources:\n+   limits:\n+     cpu: \"2\"\n+     memory: \"4Gi\"",
+    "expected_intent": "Action Required / Task Request",
+    "expected_risk": "Low",
+    "expected_priority": "P1 - High",
+    "expected_requires_approval": false
+  },
+  {
+    "id": "holdout_code_018",
+    "sender": "security-audit@company.com",
+    "subject": "Private Key accidentally included in test mock file",
+    "body": "Found test_key.pem in tests/fixtures containing -----BEGIN PRIVATE KEY-----. Please purge git history.",
+    "expected_intent": "Security Alert / Credential Exposure Risk",
+    "expected_risk": "High - Requires Human Review",
+    "expected_priority": "P0 - Critical",
+    "expected_requires_approval": true
+  },
+  {
+    "id": "holdout_code_019",
+    "sender": "tooling@company.com",
+    "subject": "New Python 3.14 Linter rule enabled",
+    "body": "Ruff lint rule E501 (line length 120) is now enforced across backend repository. See documentation for configuration.",
+    "expected_intent": "Informational / FYI",
+    "expected_risk": "Low",
+    "expected_priority": "P3 - Low",
+    "expected_requires_approval": false
+  },
+  {
+    "id": "holdout_code_020",
+    "sender": "lead@company.com",
+    "subject": "Refactoring proposal: Asyncpg vs SQLAlchemy 2.0 AsyncSession",
+    "body": "We should decide whether raw asyncpg queries or SQLAlchemy ORM gives better throughput for high-concurrency websocket handler.",
+    "expected_intent": "Decision Needed",
+    "expected_risk": "Low",
+    "expected_priority": "P1 - High",
+    "expected_requires_approval": false
+  },
+  {
+    "id": "holdout_dates_021",
+    "sender": "pm@company.com",
+    "subject": "Deadline: Staging Freeze on August 25th",
+    "body": "All feature PRs must be merged by August 25th 18:00 EST. Code freeze starts August 26th.",
+    "expected_intent": "Informational / FYI",
+    "expected_risk": "Low",
+    "expected_priority": "P3 - Low",
+    "expected_requires_approval": false
+  },
+  {
+    "id": "holdout_dates_022",
+    "sender": "client@partner.com",
+    "subject": "Meeting Request: Integration Architecture Sync on Thursday",
+    "body": "Are you free Thursday 2:00 PM EST to discuss OAuth2 SSO integration timeline?",
+    "expected_intent": "Action Required / Task Request",
+    "expected_risk": "Low",
+    "expected_priority": "P1 - High",
+    "expected_requires_approval": false
+  },
+  {
+    "id": "holdout_dates_023",
+    "sender": "sysadmin@company.com",
+    "subject": "Scheduled Database Maintenance: Sunday 02:00 UTC",
+    "body": "Database maintenance window scheduled for Sunday 02:00 - 04:00 UTC. Expect 15 minutes of read-only mode.",
+    "expected_intent": "Informational / FYI",
+    "expected_risk": "Low",
+    "expected_priority": "P3 - Low",
+    "expected_requires_approval": false
+  },
+  {
+    "id": "holdout_dates_024",
+    "sender": "dev@company.com",
+    "subject": "Question regarding API rate limit window reset",
+    "body": "Does the sliding window rate limiter reset at midnight UTC or rolling 60 seconds?",
+    "expected_intent": "Technical Query",
+    "expected_risk": "Low",
+    "expected_priority": "P2 - Medium",
+    "expected_requires_approval": false
+  },
+  {
+    "id": "holdout_dates_025",
+    "sender": "vp-eng@company.com",
+    "subject": "Strategic Decision: Choose Primary Cloud Provider for 2027",
+    "body": "We need an executive decision on whether to migrate secondary region workloads to GCP or remain 100% AWS.",
+    "expected_intent": "Decision Needed",
+    "expected_risk": "Low",
+    "expected_priority": "P1 - High",
+    "expected_requires_approval": false
+  },
+  {
+    "id": "holdout_promo_026",
+    "sender": "news@techmag.io",
+    "subject": "URGENT: Read the Top 10 Developer Trends of 2026!",
+    "body": "Don't miss out on our special issue highlighting LLM agents and WebAssembly. Click here to subscribe for free.",
+    "expected_intent": "Promotional / Marketing",
+    "expected_risk": "Low",
+    "expected_priority": "P3 - Low",
+    "expected_requires_approval": false
+  },
+  {
+    "id": "holdout_promo_027",
+    "sender": "offers@cloudmonitor.com",
+    "subject": "Action Needed: Claim your $500 Monitoring Voucher",
+    "body": "Special limited time offer for engineering teams. Claim your free observability trial voucher today.",
+    "expected_intent": "Promotional / Marketing",
+    "expected_risk": "Low",
+    "expected_priority": "P3 - Low",
+    "expected_requires_approval": false
+  },
+  {
+    "id": "holdout_promo_028",
+    "sender": "events@conf.org",
+    "subject": "Early Bird Tickets Closing Tonight for PyCon 2026",
+    "body": "Register now to save 30% on standard admission tickets.",
+    "expected_intent": "Promotional / Marketing",
+    "expected_risk": "Low",
+    "expected_priority": "P3 - Low",
+    "expected_requires_approval": false
+  },
+  {
+    "id": "holdout_promo_029",
+    "sender": "deals@saastools.io",
+    "subject": "Exclusive 40% discount on Enterprise Slack Bots",
+    "body": "Automate your daily standup meetings with our Slack integration. Unsubscribe to stop receiving emails.",
+    "expected_intent": "Promotional / Marketing",
+    "expected_risk": "Low",
+    "expected_priority": "P3 - Low",
+    "expected_requires_approval": false
+  },
+  {
+    "id": "holdout_promo_030",
+    "sender": "webinar@devops.com",
+    "subject": "Join our live webinar on Kubernetes Cost Optimization",
+    "body": "Learn how top engineering teams reduced EKS cluster costs by 45%. Register for free.",
+    "expected_intent": "Promotional / Marketing",
+    "expected_risk": "Low",
+    "expected_priority": "P3 - Low",
+    "expected_requires_approval": false
+  },
+  {
+    "id": "holdout_sec_031",
+    "sender": "security-alert@github.com",
+    "subject": "CRITICAL: Secret Scanning Alert - Private API Key Exposed",
+    "body": "GitHub Secret Scanning detected OpenAI api_key sk-proj-9988223344 exposed in public repo commit. Take action immediately.",
+    "expected_intent": "Security Alert / Credential Exposure Risk",
+    "expected_risk": "High - Requires Human Review",
+    "expected_priority": "P0 - Critical",
+    "expected_requires_approval": true
+  },
+  {
+    "id": "holdout_sec_032",
+    "sender": "secops@company.com",
+    "subject": "Security Incident: Unauthorized SSH Login Attempt on Bastion",
+    "body": "Multiple failed SSH attempts detected from IP 198.51.100.44 on bastion host. IP temporarily blocked. Password reset enforced.",
+    "expected_intent": "Security Alert / Credential Exposure Risk",
+    "expected_risk": "High - Requires Human Review",
+    "expected_priority": "P0 - Critical",
+    "expected_requires_approval": true
+  },
+  {
+    "id": "holdout_sec_033",
+    "sender": "infra-security@company.com",
+    "subject": "Urgent: Delete Compromised Production Database Backup",
+    "body": "Database backup file prod_db_backup.sql containing plaintext password hashes must be deleted from S3 bucket immediately.",
+    "expected_intent": "Security Alert / Credential Exposure Risk",
+    "expected_risk": "High - Requires Human Review",
+    "expected_priority": "P0 - Critical",
+    "expected_requires_approval": true
+  },
+  {
+    "id": "holdout_sec_034",
+    "sender": "identity@company.com",
+    "subject": "OAuth Client Secret Compromised for Staging App",
+    "body": "Staging OAuth client_secret was logged in plain text. Please generate new client secret in Google Cloud Console.",
+    "expected_intent": "Security Alert / Credential Exposure Risk",
+    "expected_risk": "High - Requires Human Review",
+    "expected_priority": "P0 - Critical",
+    "expected_requires_approval": true
+  },
+  {
+    "id": "holdout_sec_035",
+    "sender": "ciso@company.com",
+    "subject": "EMERGENCY: Prod Database Credential Leak in Slack Channel",
+    "body": "A developer accidentally posted prod database access credentials in #general channel. Revoke credentials immediately.",
+    "expected_intent": "Security Alert / Credential Exposure Risk",
+    "expected_risk": "High - Requires Human Review",
+    "expected_priority": "P0 - Critical",
+    "expected_requires_approval": true
+  },
+  {
+    "id": "holdout_misc_036",
+    "sender": "colleague@company.com",
+    "subject": "How to query PostgreSQL JSONB fields efficiently?",
+    "body": "Quick question: Are you using GIN indexes or expression indexes for query on user_metadata->>'role'?",
+    "expected_intent": "Technical Query",
+    "expected_risk": "Low",
+    "expected_priority": "P2 - Medium",
+    "expected_requires_approval": false
+  },
+  {
+    "id": "holdout_misc_037",
+    "sender": "lead@company.com",
+    "subject": "Please review pull request #504 (Alembic migration fix)",
+    "body": "PR #504 adds missing index on execution_trace.created_at. Please review and merge.",
+    "expected_intent": "Action Required / Task Request",
+    "expected_risk": "Low",
+    "expected_priority": "P1 - High",
+    "expected_requires_approval": false
+  },
+  {
+    "id": "holdout_misc_038",
+    "sender": "infra@company.com",
+    "subject": "FYI: Redis memory policy changed to volatile-lru",
+    "body": "Updated maxmemory-policy on staging Redis cluster to volatile-lru. Eviction metrics normal.",
+    "expected_intent": "Informational / FYI",
+    "expected_risk": "Low",
+    "expected_priority": "P3 - Low",
+    "expected_requires_approval": false
+  },
+  {
+    "id": "holdout_misc_039",
+    "sender": "design@company.com",
+    "subject": "Feedback needed on Dashboard Dark Mode Color Palette",
+    "body": "We uploaded mockup options for the execution trace timeline. Please let us know if Option 1 or Option 2 is preferred.",
+    "expected_intent": "Decision Needed",
+    "expected_risk": "Low",
+    "expected_priority": "P2 - Medium",
+    "expected_requires_approval": false
+  },
+  {
+    "id": "holdout_misc_040",
+    "sender": "sales@software.com",
+    "subject": "Special discount on IDE licenses for your engineering team",
+    "body": "Get 25% off annual subscriptions for team licenses. Contact sales today.",
+    "expected_intent": "Promotional / Marketing",
+    "expected_risk": "Low",
+    "expected_priority": "P3 - Low",
+    "expected_requires_approval": false
+  },
+  {
+    "id": "holdout_misc_041",
+    "sender": "intern@company.com",
+    "subject": "Question about Docker Compose port mapping conflict",
+    "body": "Port 5432 is already in use by local PostgreSQL. Should I change container port in docker-compose.yml to 5433?",
+    "expected_intent": "Technical Query",
+    "expected_risk": "Low",
+    "expected_priority": "P2 - Medium",
+    "expected_requires_approval": false
+  },
+  {
+    "id": "holdout_misc_042",
+    "sender": "lead@company.com",
+    "subject": "Action Needed: Fix failing test in test_api.py",
+    "body": "Test test_health_check is failing on main branch after latest commit. Please fix immediately.",
+    "expected_intent": "Action Required / Task Request",
+    "expected_risk": "Low",
+    "expected_priority": "P1 - High",
+    "expected_requires_approval": false
+  },
+  {
+    "id": "holdout_misc_043",
+    "sender": "architect@company.com",
+    "subject": "Decision Needed: Select Caching Strategy for User Style Memory",
+    "body": "We need to choose between in-memory LRU cache and Redis hash storage for RAG style memory retrieval.",
+    "expected_intent": "Decision Needed",
+    "expected_risk": "Low",
+    "expected_priority": "P1 - High",
+    "expected_requires_approval": false
+  },
+  {
+    "id": "holdout_misc_044",
+    "sender": "ops@company.com",
+    "subject": "FYI: Monthly SSL Certificate Renewal Succeeded",
+    "body": "Certbot auto-renewed wildcard TLS certificate for *.api.company.com. Valid until November 2026.",
+    "expected_intent": "Informational / FYI",
+    "expected_risk": "Low",
+    "expected_priority": "P3 - Low",
+    "expected_requires_approval": false
+  },
+  {
+    "id": "holdout_misc_045",
+    "sender": "newsletter@tech.com",
+    "subject": "This Week in Python 3.14 & AsyncIO Ecosystem",
+    "body": "Catch up on the latest PEP updates and standard library changes. Unsubscribe link below.",
+    "expected_intent": "Promotional / Marketing",
+    "expected_risk": "Low",
+    "expected_priority": "P3 - Low",
+    "expected_requires_approval": false
+  },
+  {
+    "id": "holdout_misc_046",
+    "sender": "dev@company.com",
+    "subject": "Clarification on FastAPI Dependency Injection lifetime",
+    "body": "Is Depends(get_db) creating a new AsyncSession per HTTP request or sharing connection pool?",
+    "expected_intent": "Technical Query",
+    "expected_risk": "Low",
+    "expected_priority": "P2 - Medium",
+    "expected_requires_approval": false
+  },
+  {
+    "id": "holdout_misc_047",
+    "sender": "manager@company.com",
+    "subject": "Action Needed: Prepare release notes for version v2.0",
+    "body": "Please draft changelog highlights for the upcoming v2.0 production release by Wednesday.",
+    "expected_intent": "Action Required / Task Request",
+    "expected_risk": "Low",
+    "expected_priority": "P1 - High",
+    "expected_requires_approval": false
+  },
+  {
+    "id": "holdout_misc_048",
+    "sender": "qa@company.com",
+    "subject": "FYI: Load test results for 10,000 concurrent websocket connections",
+    "body": "Load test completed with zero dropped messages. Median latency: 12ms. Report attached.",
+    "expected_intent": "Informational / FYI",
+    "expected_risk": "Low",
+    "expected_priority": "P3 - Low",
+    "expected_requires_approval": false
+  },
+  {
+    "id": "holdout_misc_049",
+    "sender": "lead@company.com",
+    "subject": "Decision Needed: Celery vs FastAPI BackgroundTasks for email queue",
+    "body": "We must evaluate whether simple BackgroundTasks or Redis-backed Celery worker is better for background draft sync.",
+    "expected_intent": "Decision Needed",
+    "expected_risk": "Low",
+    "expected_priority": "P1 - High",
+    "expected_requires_approval": false
+  },
+  {
+    "id": "holdout_misc_050",
+    "sender": "promo@cloudtools.com",
+    "subject": "Get 30 days free access to APM Monitoring Tool",
+    "body": "Try our real-time application performance monitoring tool today. No credit card required.",
+    "expected_intent": "Promotional / Marketing",
+    "expected_risk": "Low",
+    "expected_priority": "P3 - Low",
+    "expected_requires_approval": false
+  }
+]
